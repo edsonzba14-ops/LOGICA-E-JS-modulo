@@ -11,3 +11,4 @@ function login(){
     console.log(resultadoSenha);
 }
 
+login();
