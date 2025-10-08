@@ -1,0 +1,11 @@
+Sobre o exercício da lista de presença:
+
+1- Criei uma função chamada "alunos" (tudo o que estiver dentro dessa função só vai rodar quando ela for chamada)
+
+2- Na primeira constante, defini que a turma tem 24 alunos no total (o valor é fixo e não muda por ser uma constante)
+
+3-Criei um prompt (caixinha de texto para o usuário digitar e o navegador coletar a informação) 
+O que o usuário digitar vai ficar guardado dentro da variável "alunosPresentes"
+
+4-Criei a variável "alunosPresentes", e se o valor digitado for maior ou igual a 13, a variável "respostaAlunos" recebe True, caso o contrário recebe False       
+____________________________________________________________
