@@ -1,0 +1,1 @@
+// Crie uma função par_ou_impar(numero) que mostra se o número é par ou ímpar.
