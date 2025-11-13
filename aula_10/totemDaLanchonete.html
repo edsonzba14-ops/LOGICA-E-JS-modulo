@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Totem da Lanchonete</title>
+  </head>
+  <body>
+    <script>
+      function totem() {
+        var nomeDoSanduiche = prompt("Qual o nome do sanduíche?");
+        var precoAcompanhamento = 2;
+        var total = 0;
+
+        for (var i = 0; i <= 4; i++) {
+          var acompanhamento = prompt(
+            "Digite o acompanhamento " +
+              (i + 1) +
+              " ou digite CONCLUIR para finalizar"
+          );
+
+          if (acompanhamento.toUpperCase() === "CONCLUIR") {
+            break;
+          }
+
+          total += precoAcompanhamento;
+
+          alert(
+            "Você escolheu " +
+              (i + 1) +
+              " acompanhamento(s), e o preço dos acompanhamentos até agora é R$ " +
+              total
+          );
+        }
+
+        alert(
+          "Pedido finalizado! \n" +
+            "Sanduíche: " +
+            nomeDoSanduiche +
+            "\n" +
+            "Total a pagar: R$" +
+            total
+        );
+      }
+
+      totem();
+      
+    </script>
+  </body>
+</html>

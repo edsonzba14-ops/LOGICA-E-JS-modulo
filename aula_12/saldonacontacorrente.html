@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saldo na conta corrente</title>
+  </head>
+  <body>
+    <script>
+      const clientes = ["Papai Noel", "Vovó Mafalda", "Rena do Papai Noel", "Elfo"];
+      const saldos = [1500, 200, 0, 320, 780];
+      const nomeCliente = prompt("Digite o nome do cliente:");
+      const nomeClienteMin = nomeCliente.toLowerCase();
+      var saldoEncontrado = null;
+
+      for (var i = 0; i < clientes.length; i++) {
+        if (clientes[i].toLowerCase() === nomeClienteMin) {
+          saldoEncontrado = saldos[i];
+          break;
+        }
+      }
+      if (saldoEncontrado !== null) {
+        alert(
+          "O saldo na conta corrente de " + nomeCliente + " é de R$ " + saldoEncontrado
+          );
+      } else {
+        alert("Cliente não Existe");
+      }
+    </script>
+  </body>
+</html>
